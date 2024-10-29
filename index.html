@@ -1,137 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Week-3</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Portfo</title>
 </head>
+
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#music">Music</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <nav>
+        <div class="logo">
+            <i class="fas fa-code"></i>
+        </div>
+        <div class="links">
+            <a href="#" class="active">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact Me</a>
+        </div>
+    </nav>
 
-    <main>
-        <section id="home" class="home-page">
-            <div class="home-page-img">
-                <img src="pp-porto.jpg" alt="Profile Picture">
+    <div class="about">
+        <div class="left">
+            <h3>Undergraduated Front-End Developer</h3>
+            <div class="info">
+                <h2>I'm Baruna Pasha</h2>
+                <p>Undergraduated Student in Computer Science Who Have Passions in Front-End Developer.</p>
             </div>
+        </div>
+        <div class="right">
+            <img src="baruna.jpg">
+        </div>
+    </div>
 
-            <div class="content">
-                <h1>Hello, I'am Baruna</h1>
-                <h3>Web Enthusiast</h3>
-                <p>Baruna adalah seorang pemuda yang baru saja mulai belajar tentang web development. 
-                    Ia memiliki ketertarikan yang besar terhadap dunia digital, 
-                    dan ia ingin menjadi seorang web developer profesional.
-                </p>
-
-                <div class="social-icon">
-                    <a href="https://www.instagram.com/barunapasha/"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://wa.me/085717623720"><i class='bx bxl-whatsapp'></i></i></a>
-                    <a href="#"><i class='bx bxl-twitch' ></i></a>
-                    <a href="https://www.linkedin.com/in/senopati-baruna-pasha-3a3a62246/"><i class='bx bxl-linkedin'></i></a>
+    <div class="works">
+        <div class="left">
+            <h3><i class="fas fa-circle"></i> Recent Works</h3>
+            <div class="works-list">
+                <div class="item">
+                    <div class="work-info">
+                        <h5>Head Event Department</h5>
+                        <p>December 2023 - September 2024</p>
+                    </div>
+                    <p>Citeup 2024</p>
+                </div>
+                <div class="item">
+                    <div class="work-info">
+                        <h5>Operating System Lab Assistant</h5>
+                        <p>January - July 2024</p>
+                    </div>
+                    <p>Universitas Pertamina</p>
+                </div>
+                <div class="item">
+                    <div class="work-info">
+                        <h5>Front-End Developer</h5>
+                        <p>July 2024</p>
+                    </div>
+                    <p>Freelance</p>
                 </div>
             </div>
-        </section>
-
-        <section id="music" class="music-page">
-            <div class="music-page-img">
-                <img src="pp-porto.jpg" alt="Profile Picture">
-            </div>
-                
-            <div class="music-page-media">
-                <audio controls>
-                    <source src="gracie.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-        
-                <video controls>
-                    <source src="gracie.mp4" type="video/mp4">
-                    Your browser does not support the video element.
-                </video>
-            </div>
-        </section>        
-
-        <section id="contact" class="contact-page">
-            <div class="form-container">
-                <h2>Contact Me</h2>
-                <form action="" method="get">
-                    <table>
-                        <h3>Silahkan Isi Form Dibawah Untuk Menghubungi Saya!</h3>
-                        <tr>
-                            <td><label for="nama">Nama Lengkap:</label></td>
-                            <td><input type="text" name="nama" id="nama" required></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="email">Email:</label></td>
-                            <td><input type="email" name="email" id="email" required></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="usia">Usia:</label></td>
-                            <td><input type="number" name="usia" id="usia" min="10" max="100" required></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="password">Password:</label></td>
-                            <td><input type="password" name="password" id="password" required></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="gender">Jenis Kelamin:</label></td>
-                            <td>
-                                <div class="bordered-radio">
-                                    <input type="radio" name="gender" id="laki-laki" value="laki-laki" required>
-                                    <label for="laki-laki">Laki-laki</label>
-                                    <input type="radio" name="gender" id="perempuan" value="perempuan" required>
-                                    <label for="perempuan">Perempuan</label>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="prodi">Pilih Prodi:</label></td>
-                            <td>
-                                <select name="prodi" id="prodi">
-                                    <option value="" selected hidden></option>
-                                    <option value="Ilmu Komputer">Ilmu Komputer</option>
-                                    <option value="Kimia">Kimia</option>
-                                    <option value="Teknik Logistik">Teknik Logistik</option>
-                                    <option value="Teknik Lingkungan">Teknik Lingkungan</option>
-                                </select>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="pesan">Pesan:</label></td>
-                            <td><textarea name="pesan" id="pesan" placeholder="Tulis pesan disini"></textarea></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="urgent">Urgent?</label></td>
-                            <td><input type="checkbox" id="urgent" name="urgent" value="urgent"><b>YA!</b></td>
-                        </tr>
-                    </table>
-
-                    <div class="button-group">
-                        <input type="submit" value="Kirim">
-                        <input type="reset" value="Reset">
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="copyright">
-            &copy; Copyright 2024 | Design by <a href="https://www.instagram.com/barunapasha/" target="#">Baruna</a>
         </div>
+        
+        <div class="right">
+            <div class="item">
+                <a href="#">About Me</a>
+                <p>Halo, nama saya Baruna. Saya adalah seorang mahasiswa yang tengah berfokus untuk menjadi seorang Full-Stack Developer, dengan kemampuan dalam pengembangan front-end maupun back-end. Saya memiliki minat besar dalam mengembangkan aplikasi web yang interaktif, responsif, dan fungsional, dengan pemahaman mendalam di berbagai teknologi web.</p>
+            </div>
+            <div class="item">
+                <a href="#">Hobby</a>
+                <p>Saya sangat menyukai olahraga terutama Gym & Renang.</p>
+            </div>
+            <div class="item">
+                <a href="#">Age</a>
+                <p>Sekarang saya berumur 20 tahun.</p>
+            </div>
+            <div class="item">
+                <a href="#">Fun Fact</a>
+                <p>Saya tidak berani nonton film horror tapi saya berani nonton film thriller.</p>
+            </div>
+            <div class="item">
+                <a href="#">Projects</a>
+                <p>Jika anda memiliki Projects bisa undang saya karna saya ingin sekali mencari penglaman baru.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+       <p>&copy; Copyright Goes To Baruna Pasha, Design Inspired By ASMR Prog</p>
     </footer>
+
 </body>
+
 </html>
